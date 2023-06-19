@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Score Tracker</title>
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <main class="flex flex-col gap-12 border-2 rounded-md border-slate-800 p-16">
+      <div class="w-72 flex flex-col gap-6 text-center">
+        <img
+          class="w-full"
+          src="./GameOn_Png.png" />
+        <h1 class="mx-auto text-5xl">Score Tracker</h1>
+        <h2 class="mx-auto text-4xl border-2 rounded-md border-slate-800 py-2 px-16">
+          <span id="player1display">0</span> to <span id="player2display">0</span>
+        </h2>
+        <p>Use the buttons below to track your scores</p>
+      </div>
+      <div
+        class="flex mx-auto gap-2 text-center border-2 rounded-md border-slate-800 py-2 px-16 items-center justify-center">
+        <h4 class="font-semibold">Playing to</h4>
+        <select
+          name="playto"
+          id="playto"
+          class="rounded-md px-2 py-1 items-center font-semibold">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="11">11</option>
+        </select>
+      </div>
+      <div class="flex gap-2 text-align-center p-4">
+        <button
+          class="rounded-md bg-green-800 p-2 text-white"
+          id="player1btn">
+          +1 Player 1</button
+        ><button
+          class="rounded-md bg-black p-3 text-white"
+          id="player2btn">
+          +1 Player 2</button
+        ><button
+          class="rounded-md bg-red-800 p-2 text-white"
+          id="reset">
+          Reset
+        </button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
